@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LibertyBank</string>
+    <string name="user">მომხმარებელი</string>
+    <string name="error_first_name">შეიყვანეთ სწორი მეილი!</string>
+    <string name="error_last_name">შეიყვანეთ სწორი პაროლი!</string>
+    <string name="error_email">შეიყვანეთ პაროლი სწორად!</string>
+</resources>
