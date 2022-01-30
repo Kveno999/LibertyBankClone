@@ -4,16 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.libertybank.adapters.ViewPagerAdapter
 import com.example.libertybank.classes.RecyclerViewTransactions
+import com.example.libertybank.classes.Transactions
 import com.example.libertybank.databinding.FragmentHomeBinding
-import com.google.android.material.tabs.TabLayout
 
 class HomeFragment: Fragment() {
 
@@ -21,6 +19,9 @@ class HomeFragment: Fragment() {
     private val binding get() = _binding!!
     private lateinit var viewPager : ViewPager2
     private lateinit var adapter : ViewPagerAdapter
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerViewTransactionsAdapter: RecyclerViewTransactions
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -43,11 +44,17 @@ class HomeFragment: Fragment() {
         viewPager.adapter = adapter
 
 
-        binding.transactionsRecyclerView.layoutManager = LinearLayoutManager(requireContext())
-        binding.transactionsRecyclerView.adapter = RecyclerViewTransactions()
+
+
+        recyclerView = binding.transactionsRecyclerView
+        recyclerViewTransactionsAdapter = RecyclerViewTransactions()
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        recyclerView.adapter = recyclerViewTransactionsAdapter
 
 
     }
+
+
 
 
     override fun onDestroyView() {

@@ -5,15 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.libertybank.R
 
-class RecyclerViewTransactions: RecyclerView.Adapter<RecyclerViewTransactions.ViewHolder>() {
+class RecyclerViewTransactions : RecyclerView.Adapter<RecyclerViewTransactions.ViewHolder>() {
 
     //    private var titles = arrayOf("Guess")
-//    private val images = intArrayOf(R.drawable.samjer)
-    private var titles = arrayOf("ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია")
+//    private val images = intArrayOf(R.drawable.samjer)1
+    private var titles = arrayOf("ტრანზაქცია","111","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია")
     private var dates = arrayOf("2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22")
     private var prices = arrayOf("200","200","200","200","200","200","200","200","200")
     private val images = intArrayOf(R.drawable.svg_transaction, R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction)
@@ -33,7 +32,7 @@ class RecyclerViewTransactions: RecyclerView.Adapter<RecyclerViewTransactions.Vi
     }
 
     override fun getItemCount(): Int {
-        return 1
+        return titles.size
     }
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         var itemImage: ImageView = itemView.findViewById(R.id.imageViewTransactions)
