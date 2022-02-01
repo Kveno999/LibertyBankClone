@@ -134,6 +134,35 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/vector_line"/>
     <LinearLayout
+        android:id="@+id/viewMaps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/svg_google_maps"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="გვიპოვე მაპზე"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/bpg_nino_mtavruli_normal"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/vector_line"/>
+    <LinearLayout
         android:id="@+id/viewLogout"
         android:layout_width="match_parent"
         android:layout_height="50dp"

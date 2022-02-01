@@ -12,7 +12,7 @@ class RecyclerViewTransactions : RecyclerView.Adapter<RecyclerViewTransactions.V
 
     //    private var titles = arrayOf("Guess")
 //    private val images = intArrayOf(R.drawable.samjer)1
-    private var titles = arrayOf("ტრანზაქცია","111","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია")
+    private var titles = arrayOf("ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია","ტრანზაქცია")
     private var dates = arrayOf("2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22","2020/01/22")
     private var prices = arrayOf("200","200","200","200","200","200","200","200","200")
     private val images = intArrayOf(R.drawable.svg_transaction, R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction,R.drawable.svg_transaction)

@@ -96,7 +96,7 @@
             android:background="@drawable/background_edit_text"
             android:textColor="@color/black"
             android:fontFamily="@font/bpg_nino_mtavruli_normal"
-            android:inputType="number"/>
+            android:inputType="text"/>
     </LinearLayout>
 
     <LinearLayout
@@ -121,7 +121,7 @@
             android:background="@drawable/background_edit_text"
             android:textColor="@color/black"
             android:fontFamily="@font/bpg_nino_mtavruli_normal"
-            android:inputType="number"/>
+            android:inputType="text"/>
     </LinearLayout>
 
 

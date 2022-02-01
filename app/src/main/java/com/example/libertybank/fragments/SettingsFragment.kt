@@ -39,12 +39,16 @@ class SettingsFragment: Fragment() {
     private fun registerListeners () {
         val buttonLogout = binding.viewLogout
         val buttonProfile = binding.viewProfile
+        val buttonMaps = binding.viewMaps
         buttonLogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             findNavController().navigate(R.id.action_settingsFragment_to_mainActivity)
         }
         buttonProfile.setOnClickListener {
             findNavController().navigate(R.id.action_settingsFragment_to_profileFragment)
+        }
+        buttonMaps.setOnClickListener {
+            findNavController().navigate(R.id.action_settingsFragment_to_mapsFragment)
         }
     }
 

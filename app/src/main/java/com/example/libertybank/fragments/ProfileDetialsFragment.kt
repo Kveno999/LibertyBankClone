@@ -46,7 +46,7 @@ class ProfileDetialsFragment: Fragment() {
         val editTextName = binding.editTextName.text
         val editTextSurname = binding.editTextSurname.text
         val editTextCardNumber = binding.editTextCardNumber.text
-        val editTextMobileNumber = binding.editTextMobileNumber
+        val editTextMobileNumber = binding.editTextMobileNumber.text
         val buttonSave = binding.buttonSave
         val mAuth = FirebaseAuth.getInstance()
 
@@ -54,7 +54,7 @@ class ProfileDetialsFragment: Fragment() {
             db.child("user").child(mAuth.currentUser?.uid.toString()).child("name").setValue(editTextName.toString())
             db.child("user").child(mAuth.currentUser?.uid.toString()).child("surname").setValue(editTextSurname.toString())
             db.child("user").child(mAuth.currentUser?.uid.toString()).child("card").setValue(editTextCardNumber.toString())
-            db.child("user").child(mAuth.currentUser?.uid.toString()).child("card").setValue(editTextMobileNumber.toString())
+            db.child("user").child(mAuth.currentUser?.uid.toString()).child("mobile").setValue(editTextMobileNumber.toString())
             db.child("user").child(mAuth.currentUser?.uid.toString()).child("profileCompleted").setValue(1)
             showErrorSnackBar("თქვენი მონაცემები წარმატებით შეინახა!", false)
             findNavController().navigate(R.id.action_profileDetialsFragment_to_loginFragment)
