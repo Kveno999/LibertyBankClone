@@ -4,4 +4,11 @@
     <string name="error_first_name">შეიყვანეთ სწორი მეილი!</string>
     <string name="error_last_name">შეიყვანეთ სწორი პაროლი!</string>
     <string name="error_email">შეიყვანეთ პაროლი სწორად!</string>
+    <string name="logo">Logo</string>
+    <string name="textViewInfo">შეავსე შენი ინფორმაცია</string>
+    <string name="name">სახელი</string>
+    <string name="surname">გვარი</string>
+    <string name="cardNumber">ბარათის ნომერი</string>
+    <string name="mobileNumber">მობილურის ნომერი</string>
+    <string name="save">შენახვა</string>
 </resources>

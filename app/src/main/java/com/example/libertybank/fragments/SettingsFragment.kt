@@ -38,11 +38,17 @@ class SettingsFragment: Fragment() {
 
     private fun registerListeners () {
         val buttonLogout = binding.viewLogout
+        val buttonProfile = binding.viewProfile
         buttonLogout.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             findNavController().navigate(R.id.action_settingsFragment_to_mainActivity)
         }
+        buttonProfile.setOnClickListener {
+            findNavController().navigate(R.id.action_settingsFragment_to_profileFragment)
+        }
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
