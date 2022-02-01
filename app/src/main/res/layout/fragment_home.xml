@@ -9,13 +9,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="165dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/liberty_logo"/>
 
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="მოგესალმებით გიორგი!"
+            android:textColor="@color/white"
+            android:fontFamily="@font/bpg_nino_mtavruli_normal"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textSize="22sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/background_vector_simple"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,7 +34,6 @@
             android:textColor="@color/white"
             android:fontFamily="@font/bpg_nino_mtavruli_normal"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="30dp"
             android:textSize="18sp"/>
 
         <androidx.viewpager2.widget.ViewPager2

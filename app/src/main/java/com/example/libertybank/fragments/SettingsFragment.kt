@@ -5,7 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.libertybank.R
 import com.example.libertybank.databinding.FragmentSettingsBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class SettingsFragment: Fragment() {
 
@@ -25,6 +28,20 @@ class SettingsFragment: Fragment() {
 
 
         return view
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        registerListeners()
+    }
+
+    private fun registerListeners () {
+        val buttonLogout = binding.viewLogout
+        buttonLogout.setOnClickListener {
+            FirebaseAuth.getInstance().signOut()
+            findNavController().navigate(R.id.action_settingsFragment_to_mainActivity)
+        }
     }
 
     override fun onDestroyView() {
